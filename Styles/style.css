@@ -86,6 +86,53 @@
     margin-bottom: 50px;
 }
 
+.display-flex{
+    display: flex;
+}
+
+/* MAin Section Design */
+main > section{
+    max-width: 1440px;
+    margin: 100px auto;
+}
+.team-feature{
+    max-width: 540px;
+    margin-left: 130px;
+    
+   
+    
+}
+
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    border-radius: 8px;
+    border: none;
+}
+.teams{
+    align-items: center;
+}
+#word-1{
+    font-size: 2.9rem;
+    font-weight: bold;
+    color: #727272;
+
+}
+#word-2{
+    font-size: 2.9rem;
+    font-weight: bold;
+}
+#word-3{
+    font-size: 2.9rem;
+    font-weight: bold;
+    color: #FF900E;
+}
+.feature-discription{
+    font-size: 1rem;
+    margin-bottom: 32px;
+
+}
 /* Banner Media Query */
 @media screen and (max-width:776px) {
     .menu ul, .navbar{
