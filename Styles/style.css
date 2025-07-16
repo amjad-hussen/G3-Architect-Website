@@ -1,0 +1,48 @@
+/* Font Style */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:600px;
+  font-style: normal;
+}
+/* Font Color    */
+.dark1{
+    color: #131313;
+}
+.dark2{
+    color: #424242;
+}
+.dark3{
+    color: #727272;
+}
+/* Header Section */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 100px;
+}
+.logo h3{
+    font-size: 45px;
+    font-weight: bold;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 46px;
+    
+    
+    
+}
+.menu li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #424242;
+    
+
+}
