@@ -18,16 +18,26 @@
 .dark3{
     color: #727272;
 }
+/* Shared Design */
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+}
 /* Header Section */
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 100px;
+    
 }
 .logo h3{
-    font-size: 45px;
-    font-weight: bold;
+    font-size: 3rem;
+    font-weight: 700;
 }
 .menu ul {
     display: flex;
@@ -40,9 +50,46 @@
 }
 .menu li a{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #424242;
     
 
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0px auto;
+    
+    
+
+}
+/* Banner Section Style */
+.banner-content{
+    width: 860px;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.banner-description{
+    font-size: 1rem;
+    
+}
+.banner-img{
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+/* Banner Media Query */
+@media screen and (max-width:776px) {
+    .menu ul, .navbar{
+        flex-direction: column;
+    }
+    
 }
