@@ -14,6 +14,7 @@
 }
 .dark2{
     color: #424242;
+    
 }
 .dark3{
     color: #727272;
@@ -141,10 +142,13 @@ main > section{
 .sister{
     margin-left: 140px;
 }
-.bold-text{
-    font-size: 2.75rem;
+#bold-texts{
     border-left: 5px solid #FF900E;
     padding: 20px;
+
+}
+.bold-text{
+    font-size: 2.75rem;    
     margin-bottom: 24px;
     color: #131313;
   
@@ -169,10 +173,78 @@ main > section{
     
 
 }
-.regular-text{
+#btn{
+    padding: 45px 42px;
+    margin: -150px  -100px;
+}
+#btn .years{
+    font-size: 4rem;
+    font-weight: bold;
 
 }
+#btn .exper{
+    font-size: 1.50rem;
+    font-weight: 500;
+}
 
+/* Some Fact Part Design */
+#regular{
+    width: 540px;
+}
+.fact-card{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    margin-top: 100px;
+    margin-left: 50px;
+}
+    
+.some-facts{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    height: 240px;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.fact-title{
+    font-size: 2.75rem;
+    color: #424242;
+    margin: 0px;
+}
+.fact-info{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #727272;
+    margin: 0px;
+    
+}
+/* Sponsor part Design */
+.sponsor-text{
+    width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor-img{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 50px;
+    filter: grayscale(100%);
+}
+
+/* Footer design */
+.footer{
+    background-color: #FFF4E7;
+    max-width: 1440px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.footer p{
+    text-align: center;
+    padding: 40px;
+}
 
 
 
@@ -180,7 +252,9 @@ main > section{
 
 /*  Media Query for Mobile */
 @media screen and (max-width:576px) {
-    .menu ul, .navbar{
+    .menu ul,
+    .experience-container,
+     .navbar{
         flex-direction: column;
     }
     .banner-content{
@@ -200,7 +274,44 @@ main > section{
     margin:0px auto;
     text-align: center;
 }
+.sister-architect{
+    width: 100%;
     
+}
+#btn{
+    display: none;
+   
+}
+.experience-container{
+    margin: 0px 20px;
+}
+.fact-card{
+    grid-template-columns: repeat(1,1fr);
+    
+    
+  
+}
+#regular{
+    width: 100%;
+}
+.text-container{
+    margin-left: 20px ;
+}
+.some-facts{
+    margin-bottom: 20px;
+}
+.sponsor-img{
+    grid-template-columns: repeat(1,1fr);
+    
+}
+.sponsor-img img{
+    
+    margin:0 auto 50px;
+}
+.sponsor-text{
+    width: 350px;
+}
+
 }
 
 
@@ -212,7 +323,8 @@ main > section{
 .banner-title{
     font-size: 2.5rem;
 }
-.display-flex{
+.display-flex,
+.experience-container{
     flex-direction: column;}
 .team-feature{
     margin:0px auto;
@@ -222,4 +334,29 @@ main > section{
  .menu ul, .navbar{
         margin: 0px 20px;
     }
+    .experience-container{
+        margin: 0px 50px;
+    }
+    .sister-architect{
+        width: 100%;
+    }
+
+.fact-card{
+    grid-template-columns: repeat(2,1fr);
+}
+.some-facts{
+    margin-bottom: 30px;
+}
+.text-container{
+    margin-left: 50px ;
+}
+.sponsor-img{
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.sponsor-img img{
+    
+    margin:0 auto 50px;
+}
+
 }
